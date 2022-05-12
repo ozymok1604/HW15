@@ -85,9 +85,9 @@ class Book extends Component {
           console.log(this.state);
 
           if (
-            (this.state.manChecked !== "" && contact.gender === "male") ||
-            (this.state.womanChecked !== "" && contact.gender === "female") ||
-            (this.state.anonimChecked === true && contact.gender === "unkown")
+            (this.state.manChecked == true && contact.gender === "male") ||
+            (this.state.womanChecked == true && contact.gender === "female") ||
+            (this.state.anonimChecked == true && contact.gender === "unkown")
           ) {
             if (
               contact.firstName.includes(this.state.search) ||

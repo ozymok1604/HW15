@@ -3,8 +3,8 @@ import React, { Component } from "react";
 class Input extends Component {
   state = {
     value: "",
-    manChecked: "",
-    womanChecked: "",
+    manChecked: false,
+    womanChecked: false,
     anonimChecked: false,
   };
 
